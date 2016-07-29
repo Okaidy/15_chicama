@@ -1,0 +1,78 @@
+/*keyframe que permite hacer girar a las imagenes*/
+@-webkit-keyframes girando {
+  from { -webkit-transform: rotateY(0deg);    }
+  to   { -webkit-transform: rotateY(-360deg); }
+}
+/*coloca la imagen grupal*/
+.fondo{
+	background-image: url('../img/grupal.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+/*estilo boton sumate*/
+#boton{
+	border:1px solid #FE9A2E;
+	background-color: #FE9A2E;
+	padding:10px;
+	text-align: center;
+	margin-top: 30px;
+}
+/*quita lo subrayado a los enlaces y cambia color*/
+a{
+	text-decoration: none;
+	color: black;
+}
+/*quita viñetas a listas*/
+ul {
+    list-style-type: none;
+    margin: 0 px;
+    padding: 0;
+    overflow: hidden;
+}
+/*coloca los elementos de la lista a la izquierda*/
+li{
+	float: left;
+  	display: block;
+    padding:5px;
+}
+/*ajusta el tamaño de las imagenes al ancho de las columnas que las contienen*/
+img{
+	width: 100%;
+}
+#logo{
+	margin-bottom: 600px;
+}
+/*margen hacia arriba del menu del header*/
+header ul{
+	margin-top: 20px;
+}
+/*muestra el espacio de las imagenes entre header y footer*/
+.espacio{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+/*coloca fondo gris a footer y cambia texto a blanco*/
+.gris{
+	background-color: gray;
+	color: white;
+}
+/*espacio del footer para el menu*/
+footer ul{
+	padding:20px 0px;
+}
+/*texto de fotos en negritas*/
+section p{
+	font-weight: bold;
+}
+/*cambia el color cuando pasa el cursor en el menu*/
+a:hover{
+	color: white;
+}
+/*hace girar a las imagenes*/
+img:hover{
+	-webkit-animation-name: girando;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-duration: 3s;
+   -webkit-transform-style: preserve-3d;
+}
